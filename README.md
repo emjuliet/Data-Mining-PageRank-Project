@@ -414,40 +414,127 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    Task 1, part 1:
    ```
    $ python3 pagerank.py --data=data/small.csv.gz --verbose
-   ```
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/doj-charges-two-former-twitter-employees-spying-saudis
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/lessons-so-far-whatsapp-v-nso
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-plumbing-depths-artificial-stupidity
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-sandworm-and-grus-global-intifada
+
+  ```
 
    Task 1, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/beijing-turns-public-diplomacy-and-messaging-campaigns-coronavirus-spreads-worldwide
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/china-responds-coronavirus-iron-grip-information-flow
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/coronavirus-infection-rates-rise-us-china-curbs-viruss-spread-justice-department-charges-two-chinese       
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/coronavirus-death-toll-rises-above-200-experts-expect-it-spread
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/huawei-faces-setbacks-us-courts-coronavirus-epidemic-expands-beyond-chinese-borders
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/britains-coronavirus-response
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/european-elections-time-coronavirus
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/trump-right-britain-handling-coronavirus-well   
+      
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='Trump'
-
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='Iran'
    ```
 
    Task 1, part 3:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz
-
+NFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/doj-charges-two-former-twitter-employees-spying-saudis
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/lessons-so-far-whatsapp-v-nso
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-plumbing-depths-artificial-stupidity
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-sandworm-and-grus-global-intifada
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2
    ```
 
    Task 1, part 4:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose 
+   
+   
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --alpha=0.99999
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/doj-charges-two-former-twitter-employees-spying-saudis
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/lessons-so-far-whatsapp-v-nso
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-plumbing-depths-artificial-stupidity
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-sandworm-and-grus-global-intifada
+
+
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/doj-charges-two-former-twitter-employees-spying-saudis
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/lessons-so-far-whatsapp-v-nso
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-plumbing-depths-artificial-stupidity
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-sandworm-and-grus-global-intifada   
+   
+   
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
-   ```
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/doj-charges-two-former-twitter-employees-spying-saudis
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/lessons-so-far-whatsapp-v-nso
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-plumbing-depths-artificial-stupidity
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-sandworm-and-grus-global-intifada
+
+  ```
 
    Task 2, part 1:
    ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona'
-   ```
-
+   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' 
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/0-days-n-days-iphones-and-android
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-job-board
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/doj-charges-two-former-twitter-employees-spying-saudis
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/litigation-documents-resources-related-travel-ban
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/subscribe-lawfare
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/lessons-so-far-whatsapp-v-nso
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-plumbing-depths-artificial-stupidity
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/our-comments-policy
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/upcoming-events
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/cyberlaw-podcast-sandworm-and-grus-global-intifada
+  ```
    Task 2, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
+INFO:root:rank=0 pagerank=7.7009e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
+INFO:root:rank=1 pagerank=7.7009e-03 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+INFO:root:rank=2 pagerank=7.7009e-03 url=www.lawfareblog.com/beijing-turns-public-diplomacy-and-messaging-campaigns-coronavirus-spreads-worldwide
+INFO:root:rank=3 pagerank=7.7009e-03 url=www.lawfareblog.com/china-responds-coronavirus-iron-grip-information-flow
+INFO:root:rank=4 pagerank=7.7009e-03 url=www.lawfareblog.com/coronavirus-infection-rates-rise-us-china-curbs-viruss-spread-justice-department-charges-two-chinese       
+INFO:root:rank=5 pagerank=7.7009e-03 url=www.lawfareblog.com/coronavirus-death-toll-rises-above-200-experts-expect-it-spread
+INFO:root:rank=6 pagerank=7.7009e-03 url=www.lawfareblog.com/huawei-faces-setbacks-us-courts-coronavirus-epidemic-expands-beyond-chinese-borders
+INFO:root:rank=7 pagerank=7.7009e-03 url=www.lawfareblog.com/britains-coronavirus-response
+INFO:root:rank=8 pagerank=7.7009e-03 url=www.lawfareblog.com/european-elections-time-coronavirus
+INFO:root:rank=9 pagerank=7.7009e-03 url=www.lawfareblog.com/trump-right-britain-handling-coronavirus-well
    ```
 
 1. Ensure that all your changes to the `pagerank.py` and `README.md` files are committed to your repo and pushed to github.
