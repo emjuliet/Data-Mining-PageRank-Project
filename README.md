@@ -412,8 +412,8 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
 1. Run the following commands, and paste their output into the code blocks below.
    
    Task 1, part 1:
-   ```
-   $ python3 pagerank.py --data=data/small.csv.gz --verbose
+```
+$ python3 pagerank.py --data=data/small.csv.gz --verbose
 DEBUG:root:computing indices
 DEBUG:root:computing values
 DEBUG:root:i=0 residual=0.3775096535682678
@@ -497,11 +497,11 @@ INFO:root:rank=2 pagerank=1.2402e+00 url=5
 INFO:root:rank=3 pagerank=4.5712e-01 url=2
 INFO:root:rank=4 pagerank=3.5620e-01 url=3
 INFO:root:rank=5 pagerank=3.2078e-01 url=1
-  ```
+```
 
    Task 1, part 2:
-   ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
+```
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
 INFO:root:rank=0 pagerank=4.5865e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
 INFO:root:rank=1 pagerank=4.0464e-03 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
 INFO:root:rank=2 pagerank=2.6118e-03 url=www.lawfareblog.com/britains-coronavirus-response
@@ -517,11 +517,11 @@ INFO:root:rank=9 pagerank=2.0341e-03 url=www.lawfareblog.com/cyberlaw-podcast-ho
    ??????
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='Iran'
    ??????
-   ```
+ ```
 
    Task 1, part 3:
-   ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz
+```
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz
 INFO:root:rank=0 pagerank=8.4165e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
 INFO:root:rank=1 pagerank=8.4165e+00 url=www.lawfareblog.com/lawfare-job-board
 INFO:root:rank=2 pagerank=8.4165e+00 url=www.lawfareblog.com/masthead
@@ -546,11 +546,11 @@ INFO:root:rank=7 pagerank=1.7657e+00 url=www.lawfareblog.com/congress-us-policy-
 INFO:root:rank=8 pagerank=1.6809e+00 url=www.lawfareblog.com/summary-david-holmess-deposition-testimony        
 INFO:root:rank=9 pagerank=9.8355e-01 url=www.lawfareblog.com/events
 
-  ``` 
+``` 
   
   Task 1, part 4:
-   ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose 
+```
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose 
 DEBUG:root:computing indices
 DEBUG:root:computing values
 DEBUG:root:i=0 residual=20.521549224853516
@@ -607,11 +607,11 @@ INFO:root:rank=9 pagerank=8.4165e+00 url=www.lawfareblog.com/topics
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
    ????
 
-  ```
+```
 
    Task 2, part 1:
-   ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' 
+```
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' 
 INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
 INFO:root:rank=1 pagerank=8.8867e-01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
 INFO:root:rank=2 pagerank=1.8256e-01 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global   
@@ -623,10 +623,10 @@ INFO:root:rank=7 pagerank=1.0199e-01 url=www.lawfareblog.com/britains-coronaviru
 INFO:root:rank=8 pagerank=9.4298e-02 url=www.lawfareblog.com/lawfare-podcast-mom-and-dad-talk-clinical-trials-pandemic
 INFO:root:rank=9 pagerank=8.7207e-02 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
 
-  ```
+```
    Task 2, part 2:
-   ```
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
+```
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
 INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
 INFO:root:rank=1 pagerank=8.8867e-01 url=www.lawfareblog.com/lawfare-live-covid-19-speech-and-surveillance
 INFO:root:rank=2 pagerank=1.8256e-01 url=www.lawfareblog.com/chinatalk-how-party-takes-its-propaganda-global   
@@ -637,7 +637,7 @@ INFO:root:rank=6 pagerank=7.5307e-02 url=www.lawfareblog.com/limits-world-health
 INFO:root:rank=7 pagerank=6.8115e-02 url=www.lawfareblog.com/chinatalk-dispatches-shanghai-beijing-and-hong-kong
 INFO:root:rank=8 pagerank=6.4847e-02 url=www.lawfareblog.com/us-moves-dismiss-case-against-company-linked-ira-troll-farm
 INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-armed-services-holds-hearing-national-security-challenges-north-and-south-america
-   ```
+```
 
 1. Ensure that all your changes to the `pagerank.py` and `README.md` files are committed to your repo and pushed to github.
 
