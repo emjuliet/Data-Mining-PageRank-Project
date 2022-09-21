@@ -608,7 +608,7 @@ INFO:root:rank=8 pagerank=3.6346e+00 url=www.lawfareblog.com/topics
 INFO:root:rank=9 pagerank=3.6346e+00 url=www.lawfareblog.com/documents-related-mueller-investigation
    
    
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --alpha=0.99999
+$ python3 pagerank.py --data=data/lawfareblog.csv.gz --verbose --alpha=0.99999
 DEBUG:root:computing indices
 DEBUG:root:computing values
 DEBUG:root:i=0 residual=20.522029876708984
