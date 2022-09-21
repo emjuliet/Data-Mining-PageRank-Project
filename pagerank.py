@@ -157,7 +157,7 @@ class WebGraph():
                 
                 # Power method
                 dense_mat = (alpha*xprev.t()@a_mat + (1-alpha)) * v.t()
-                x = torch.sparse.addmm(dense_mat.t(),self.P.t(), alpha*xprev)
+                x = torch.sparse.addmm(dense_mat.t(),self.P.t(), alpha*xprev, beta = 1, alpha = 0.85)
 
 
                 # output debug information
